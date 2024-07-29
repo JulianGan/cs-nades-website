@@ -8,6 +8,21 @@ function create_button(__class__, __id__, __innerHTML__, __onclick__){
     return b;
 }
 
+function create_video(__src__, __width__, __height__){
+    let v = document.createElement("video");
+    v.controls = true;
+    if (__src__)    v.src    = __src__;
+    if (__width__)  v.width  = __width__;
+    if (__height__) v.height = __height__;
+    return v
+}
+
+function main_content(){
+    if (!curr_map || !curr_player) return; // fix this later
+
+
+}
+
 function update_main_content(){
 
 }
@@ -55,12 +70,20 @@ for (let i = 1; i <= maps.length; i++){
 
 for (let i = 1; i <= players.length; i++){
     document.getElementById("player_options").append(create_button(
-        "player_button button-unfocused",      // class
-        "player_option_" + i,                  // id
-        players[i - 1],                        // innerHTML
-        function(){ click_player_button(i) }   // onclick
+        "player_button button-unfocused",    // class
+        "player_option_" + i,                // id
+        players[i - 1],                      // innerHTML
+        function(){ click_player_button(i) } // onclick
     ))
 }
 
+for (let map_key of Object.keys(all_maps)){
+    for (let i = 0; i < all_maps[map_key].length; i++){
+        document.getElementById("main_video_content").append(create_video(
+            "videos/" + map_key + "/" + all_maps[map_key][i], 400, 280
+        ))
+    }
+}
+
 // emoji's
-// playmaker, with map hub indicator and collection of lineups
+// playmaker, with map hud indicator and collection of lineups
