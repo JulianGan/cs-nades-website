@@ -6,6 +6,32 @@
   background-color: #b9babc;
 }
 
+.make_inline_block {
+  display: inline-block;
+  height: 0;
+}
+
+.add_right_padding {
+  padding-right: 20px;
+}
+
+.add_bottom_padding {
+  padding-bottom: 5px;
+}
+
+.add_font_size_11 {
+  font-size: 11;
+}
+
+.add_font_size_14 {
+  font-size: 14;
+}
+
+.generic_text_class {
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 500;
+}
+
 .main_options {
   display: inline-block;
   width: 300px;

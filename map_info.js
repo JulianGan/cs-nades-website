@@ -1,8 +1,8 @@
 all_maps = {
-	"Ancient": ["A-main-to-A-ct-smoke.mp4","A-main-to-donut-smoke.mp4","T-spawn-to-mid-flash.mp4","T-spawn-to-red-smoke.mp4",],
-	"Anubis": ["A-water-to-A-cake-molly.mp4","A-water-to-A-con-smoke.mp4","A-water-to-A-heaven-smoke.mp4","A-water-to-A-site-flash.mp4","B-long-to-B-main-flash.mp4","B-main-to-B-cave-smoke.mp4","B-main-to-B-palace-smoke.mp4","B-main-to-B-pillar-molly.mp4","B-main-to-B-site-flash.mp4","B-main-to-B-site-smoke.mp4","T-spawn-to-cave-smoke.mp4","T-spawn-to-mid-smoke.mp4",],
-	"Dust II": ["A-long-to-car-molly.mp4","A-long-to-ct-cross-smoke.mp4","B-main-to-B-door-smoke.mp4","B-main-to-B-window-smoke.mp4",],
-	"Inferno": [],
+	"Ancient": ["A-ct-smoke-from-A-main.mp4", "A-donut-smoke-from-A-main.mp4", "mid-flash-from-T-spawn.mp4", "mid-red-smoke-from-T-spawn.mp4", ],
+	"Anubis": ["A-cake-molly-from-A-water.mp4", "A-con-smoke-from-A-water.mp4", "A-heaven-smoke-from-A-water.mp4", "A-site-flash-from-A-water.mp4", "B-cave-smoke-from-B-main.mp4", "B-main-flash-from-B-long.mp4", "B-palace-smoke-from-B-main.mp4", "B-pillar-molly-from-B-main.mp4", "B-site-flash-from-B-main.mp4", "B-site-smoke-from-B-main.mp4", "cave-smoke-from-T-spawn.mp4", "mid-smoke-from-T-spawn.mp4", ],
+	"Dust II": ["A-car-molly-from-A-long.mp4", "B-door-smoke-from-B-main.mp4", "B-window-smoke-from-B-main.mp4", "ct-cross-smoke-from-A-long.mp4", ],
+	"Inferno": ["A-long-smoke-from-second-mid.mp4", "A-moto-smoke-from-A-short.mp4", "A-short-flash-from-mid.mp4", "B-coffin-smoke-from-banana.mp4", "B-ct-boost-smoke-from-banana.mp4", "B-ct-smoke-from-banana.mp4", "B-newbox-molly-from-banana.mp4", "B-site-flash-from-banana.mp4", "mid-smoke-from-ct-spawn.mp4", "upper-mid-smoke-from-ct-spawn.mp4", ],
 	"Mirage": [],
 	"Nuke": [],
 	"Vertigo": [],

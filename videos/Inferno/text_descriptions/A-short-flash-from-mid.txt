@@ -1,0 +1,1 @@
+shift walk + left click throw
