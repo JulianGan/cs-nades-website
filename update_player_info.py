@@ -22,6 +22,9 @@ def update_player_info():
 
         for line in file_content:
             map_name, lineup = line.split(" ")[0], line.split(" ")[1]
+            if line.split(" ")[0] == "Dust":
+                map_name += " " + lineup
+                lineup = line.split(" ")[2]
             player_dict[map_name].append(lineup)
         all_player_info.append((file_name.replace(".txt", ""), player_dict))
     

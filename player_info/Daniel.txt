@@ -1,0 +1,16 @@
+Ancient cave-smoke-from-T-spawn
+Ancient mid-red-smoke-from-T-spawn
+Anubis bridge-smoke-from-T-spawn
+Anubis bridge-flash-from-ruins
+Anubis B-main-flash-from-B-long
+Anubis A-stairs-flash-from-mid-doors
+Anubis mid-door-molly-from-bridge
+Dust II mid-flash-from-ct-spawn
+Dust II B-window-smoke-from-B-main
+Dust II A-site-flash-from-A-short
+Dust II A-site-molly-from-A-short
+Dust II A-long-corner-smoke-from-T-spawn
+Inferno A-moto-smoke-from-A-short
+Inferno B-ct-smoke-from-banana
+Inferno B-newbox-molly-from-banana
+Inferno B-site-flash-from-banana

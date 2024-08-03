@@ -1,2 +1,12 @@
-Inferno B-coffin-smoke-from-banana
+Ancient A-temple-smoke-from-A-main
+Ancient A-donut-smoke-from-A-main
+Anubis A-water-flash-from-broken-wall
+Anubis B-palace-smoke-from-B-main
 Anubis B-pillar-molly-from-B-main
+Anubis B-site-smoke-from-B-main
+Anubis B-cave-smoke-from-B-main
+Dust II A-long-corner-smoke-from-T-spawn
+Dust II A-long-door-smoke-from-under-A
+Dust II B-door-smoke-from-B-tunnels
+Dust II mid-door-smoke-from-T-spawn
+Dust II B-default-rollout-from-tunnels

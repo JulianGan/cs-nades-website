@@ -11,6 +11,8 @@ function create_button(__class__, __id__, __innerHTML__, __onclick__){
 function create_video(__src__, __width__, __height__){
     let v = document.createElement("video");
     v.controls = true;
+    v.preload = "none";
+    v.poster = __src__.replace("videos/", "images/").replace("mp4", "png");
     if (__src__)    v.src    = __src__;
     if (__width__)  v.width  = __width__;
     if (__height__) v.height = __height__;

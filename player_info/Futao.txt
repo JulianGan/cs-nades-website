@@ -1,0 +1,23 @@
+Ancient B-long-smoke-from-B-ruins
+Ancient mid-flash-from-T-spawn
+Ancient elbow-smoke-from-ct-spawn
+Ancient A-temple-smoke-from-A-main
+Anubis A-cake-molly-from-A-water
+Anubis A-heaven-smoke-from-A-water
+Anubis A-site-flash-from-A-water
+Anubis A-water-flash-from-broken-wall
+Anubis bridge-flash-from-mid
+Anubis bridge-flash-from-ruins
+Anubis cave-flash-from-A-upper
+Dust II A-long-corner-smoke-from-T-spawn
+Dust II A-site-flash-from-A-short
+Dust II B-default-rollout-from-tunnels
+Dust II ct-cross-smoke-from-A-long
+Dust II mid-flash-from-ct-spawn
+Inferno A-long-smoke-from-second-mid
+Inferno A-moto-smoke-from-A-short
+Inferno A-short-flash-from-mid
+Inferno B-ct-smoke-from-banana
+Inferno B-newbox-molly-from-banana
+Inferno B-site-flash-from-banana
+Inferno mid-smoke-from-ct-spawn
