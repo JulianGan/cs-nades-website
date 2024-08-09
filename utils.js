@@ -1,45 +1,49 @@
 function create_button(__class__, __id__, __innerHTML__, __onclick__){
     // str, str, str, fun
     let b = document.createElement("button");
-    if (__class__)     b.className = __class__;
-    if (__id__)        b.id        = __id__;
-    if (__innerHTML__) b.innerHTML = __innerHTML__;
-    if (__onclick__)   b.onclick   = __onclick__;
+    b.className = __class__;
+    b.id        = __id__;
+    b.innerHTML = __innerHTML__;
+    b.onclick   = __onclick__;
     return b;
 }
 
-function create_video(__src__, __width__, __height__){
+function create_video_title(title){
+    // str
+    let t = document.createElement("p");
+    t.className = "add_font_size_14 generic_text_class";
+    t.innerHTML = "<b>" + title + "</b>";
+    return t;
+}
+
+function create_text_description(text){
+    // str
+    let p = document.createElement("p");
+    p.className = "add_font_size_11 generic_text_class";
+    p.innerHTML = text;
+    return p;
+}
+
+function create_video(__src__){
+    // str
     let v = document.createElement("video");
     v.controls = true;
     v.preload = "none";
     v.poster = __src__.replace("videos/", "images/").replace("mp4", "png");
-    if (__src__)    v.src    = __src__;
-    if (__width__)  v.width  = __width__;
-    if (__height__) v.height = __height__;
-    return v
+    v.width  = 400;
+    v.height = 280;
+    v.src = __src__;
+    return v;
 }
 
 function get_video_div(__src__, title, text_description){
+    // str, str, str
     let d = document.createElement("div");
-    d.append(create_video(__src__, 400, 280));
-    d.className = "make_inline_block add_right_padding add_bottom_padding";
+    d.className = "make_inline_block add_right_padding";
 
-    let caption = document.createElement("p");
-    caption.className = "add_font_size_14 generic_text_class";
-    caption.innerHTML = "<b>" + title + "</b>";
-    d.append(caption);
-
-    if (text_description){
-        let t = document.createElement("p");
-        t.className = "add_font_size_11 generic_text_class";
-        t.innerHTML = text_description;
-        d.append(t);
-    } else {
-        let t = document.createElement("p");
-        t.className = "add_font_size_11 generic_text_class";
-        t.innerHTML = " ";
-        d.append(t);
-    }
+    d.append(create_video(__src__));
+    d.append(create_video_title(title));
+    if (text_description) d.append(create_text_description(text_description));
 
     return d;
 }
@@ -47,11 +51,15 @@ function get_video_div(__src__, title, text_description){
 function get_main_videos(){
     let main_videos = document.createElement("div");
     main_videos.id = "main_video_content";
-    main_videos.className = "";
     let map_name = maps[curr_map - 1];
     if (curr_player == 1) var lineups = all_maps[map_name];
     else var lineups = all_player_info[players[curr_player - 1]][map_name];
     for (let i = 0; i < lineups.length; i++){
+        // apply util type filter
+        if (util_type){
+            if (!lineups[i].includes(utils[util_type])) continue;
+        }
+        // add util
         main_videos.append(get_video_div(
             "videos/" + map_name + "/" + lineups[i], 
             lineups[i].replaceAll("-", " ").replaceAll(".mp4", ""),
@@ -92,5 +100,15 @@ function click_map_button(map_number){
         document.getElementById("map_option_" + map_number).classList.remove("button-unfocused");
         document.getElementById("map_option_" + map_number).classList.add("button-focus");
     }
+    update_main_content();
+}
+
+function select_util_fitler_button(button_num){
+    if (button_num == util_type) return;
+    document.getElementById("util_filter_option_" + util_type).classList.remove("button-focus");
+    document.getElementById("util_filter_option_" + util_type).classList.add("button-unfocused");
+    util_type = button_num;
+    document.getElementById("util_filter_option_" + util_type).classList.remove("button-unfocused");
+    document.getElementById("util_filter_option_" + util_type).classList.add("button-focus");
     update_main_content();
 }
