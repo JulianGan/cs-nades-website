@@ -54,12 +54,3 @@ select_util_fitler_button(0);
 // emoji's
 // playmaker, with map hud indicator and collection of lineups
 // video 6 frame thumbnail
-
-// Dust II B door smoke from box
-// Dust II B flash from above
-// Dust II A short lurk smoke
-// Ancient b door to b short
-// Anubis ruins to A con
-// Anubis cave to dark molly - too hard
-// Anubis A con smoke from upper ==
-// Anubis cave smoke from A stairs ==

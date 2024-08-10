@@ -1,6 +1,7 @@
 all_maps_descriptions = {
 	"Ancient": {
 		"B-long-smoke-from-B-lane.txt": "left-right click jump throw",
+		"B-short-smoke-from-B-lane.txt": "left-right click jump throw",
 		},
 	"Anubis": {
 		"A-stairs-flash-from-mid-doors.txt": "left-right click jump throw",
@@ -10,7 +11,6 @@ all_maps_descriptions = {
 		"B-site-flash-from-B-main.txt": "left-right click jump throw",
 		},
 	"Dust II": {
-		"B-door-smoke-from-B-tunnels.txt": "left-right click jump throw",
 		"ct-spawn-smoke-from-mid-xbox.txt": "crouch + jump throw",
 		},
 	"Inferno": {
