@@ -6,6 +6,10 @@
   background-color: #b9babc;
 }
 
+.add_hover_color:hover {
+  background-color: #b9babc;
+}
+
 .util_filter_button {
   appearance: none;
   border: 1px solid rgba(27, 31, 35, 0.15);
