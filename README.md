@@ -1,1 +1,0 @@
-Welcome to my cs nades website, where I host team strategies and Counter-Strike grenade lineups
