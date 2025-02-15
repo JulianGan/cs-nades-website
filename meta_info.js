@@ -57,7 +57,7 @@ all_player_info = {
 		"Inferno": [],
 		"Mirage": [],
 		"Nuke": [],
-		"Train": ["A-back-site-molly-from-Olof.mp4","B-site-flash-molly-from-heaven.mp4",],
+		"Train": ["A-back-site-molly-from-olof.mp4","B-site-flash-molly-from-heaven.mp4",],
 	},
 	"Julian":{
 		"Ancient": [],
